@@ -1,2 +1,8 @@
-bases:
-  - ../../app/
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../app/
+images:
+- digest: sha256:3cf75fa507f4e615f3f5d14804b902380c23b4abb324dac5e2df1f938da302df
+  name: quay.io/siamaksade/spring-petclinic:latest
+  newName: image-registry.openshift-image-registry.svc:5000/pac-demo-pipelines/spring-petclinic
