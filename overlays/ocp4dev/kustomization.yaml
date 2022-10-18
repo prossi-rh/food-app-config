@@ -4,5 +4,7 @@ resources:
 - ../../base/
 images:
 - digest: sha256:083ffa67105df33297cc48466780ed873a9ab3a639ebfba35058ad1ab42c9d98
-  name: quay.io/siamaksade/spring-petclinic:latest
-  newName: image-registry.openshift-image-registry.svc:5000/pac-demo-pipelines/spring-petclinic
+  # name: quay.io/siamaksade/spring-petclinic:latest
+  name: demo-registry-quay-quay-demo.apps.ocp4hub.sandbox963.opentlc.com/cicd-demo/food-app:latest
+  # newName: image-registry.openshift-image-registry.svc:5000/pac-demo-pipelines/spring-petclinic
+  newName: demo-registry-quay-quay-demo.apps.ocp4hub.sandbox963.opentlc.com/cicd-demo/food-app
